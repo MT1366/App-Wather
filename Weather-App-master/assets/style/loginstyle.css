@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  display: flex;
+  width: 30%;
+}
+
+.left-side {
+  background-image: url(../image/istockphoto-1181823460-1024x1024.jpg);
+  background-position: center;
+  width: 50%;
+  height: 100vh;
+  background-size: cover;
+}

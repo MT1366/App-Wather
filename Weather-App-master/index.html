@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/style/loginstyle.css" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>App Weather</title>
+  </head>
+  <body class="form">
+    <section
+      action=""
+      class="login-form d-flex container flex-column border shadow-lg radius-2 rounded-2"
+    >
+      <header class="pt-3">
+        <h3>App Weather</h3>
+      </header>
+      <hr />
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"
+          ><i class="bi bi-envelope-at"></i>
+        </span>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Username"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+          id="email"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon2"
+          ><i class="bi bi-key"></i>
+        </span>
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Enter Your Password"
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+          id="password"
+        />
+      </div>
+      <div class="d-flex flex-column gap-2 mb-2">
+        <div><input type="checkbox" /> Remember Me</div>
+        <div>
+          <button
+            type="submit"
+            class="text-light bg-primary border-0 p-2 rounded-2"
+            id="button"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="d-flex flex-column gap-1 mb-3">
+        <span
+          >Not Registered?
+          <a
+            href=""
+            class="text-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+            >Create an acount.</a
+          ></span
+        >
+        <span
+          >Forgot Your Password?
+          <a
+            href=""
+            class="text-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+            >Click here.</a
+          ></span
+        >
+      </div>
+    </section>
+
+    <section class="left-side"></section>
+
+    <script type="module" src="./assets/script/logInPage.js"></script>
+  </body>
+</html>

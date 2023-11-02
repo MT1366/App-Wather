@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Style the sing in section */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Style the sign in content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+#log-out {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 30px 30px 5px 5px;
+  padding: 10px 15px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+}
+
+#log-out p,
+i {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  /* color: black; */
+  font-weight: 600;
+}
+
+.card {
+  /* display: flex; */
+  justify-content: center;
+  width: 20%;
+  height: 525px;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 30px;
+  padding: 40px 35px;
+  text-align: center;
+  margin: 10rem auto;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background-color: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 50px;
+  border-radius: 30px;
+  flex: 1;
+  font-size: 18px;
+}
+
+.weather {
+  opacity: 0;
+  transition: opacity 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.weather-icon {
+  width: 100px;
+}
+
+.weather i {
+  font-size: 50px;
+  margin-right: 15px;
+  color: black;
+}
+.weather h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+}
+.weather h4 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: -10px;
+  color: black;
+}
+
+.details {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+  color: black;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: black;
+}
+
+.col div p {
+  margin-bottom: 0;
+  color: black;
+}
+
+.humidity,
+.wind {
+  font-size: 28px;
+  color: black;
+}
+
+.lastSix {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-around;
+  color: black;
+}
+
+/* ERROR SECTION */
+
+.error-message {
+  display: flex;
+
+  background-color: rgb(248, 60, 60);
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.error-message p {
+  margin-bottom: 0;
+}
+
+.fade-out {
+  opacity: 0.7;
+}
+
+/* .scale-up {
+  transform: scale(1.5);
+  transition: opacity 1s;
+} */
+
+.header {
+  width: 50%;
+}
+
+.body {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../image/tom-barrett-hgGplX3PFBg-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.toasty {
+  position: absolute;
+  top: -70px;
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 10px;
+  animation: toasting 4s;
+}
+
+/* .toasty-show {
+  position: absolute;
+  top: 0;
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 10px;
+  animation: toasting 2s;
+} */
+
+@keyframes toasting {
+  0% {
+    top: -70px;
+  }
+  30% {
+    top: 0;
+  }
+  40% {
+    top: 0;
+  }
+  50% {
+    top: 0;
+  }
+}
